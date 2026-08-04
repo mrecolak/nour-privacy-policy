@@ -14,7 +14,7 @@
 </head>
 <body>
 <h1>Privacy Policy for Nour</h1>
-<p><strong>Last updated: August 3, 2026</strong></p>
+<p><strong>Last updated: August 4, 2026</strong></p>
 
 <p>This is a starting draft, not legal advice. Have it reviewed if you plan to operate in
 jurisdictions with strict data-protection regimes (EU/GDPR, UK, California/CCPA, etc.)
@@ -29,6 +29,12 @@ Contact: <strong>52emre19@gmail.com</strong></p>
 <li><strong>Anonymous device identifier</strong>: When you first open the app, we create an anonymous
 account for your device (via Firebase Authentication's anonymous sign-in). This identifier
 is not linked to your name, email, or phone number unless you choose to provide them.</li>
+<li><strong>Approximate location</strong> (optional): If you choose to share your location, we use your
+device's approximate (coarse) GPS coordinates to calculate accurate prayer times for where
+you are and to schedule prayer-time notifications. Your coordinates are sent to the Aladhan
+API (see "Third-party processors" below) to retrieve prayer times, and are stored on your
+device to schedule notifications. We do not store your coordinates on our servers, and you
+can decline location sharing and pick a city instead, or use Mecca times.</li>
 <li><strong>Profile information you provide</strong>: name, city/country, gender, and stated intent —
 entered during onboarding or in Settings, used only to personalize your experience
 (e.g. how the AI addresses you, which city's prayer times to show).</li>
@@ -55,8 +61,8 @@ crash reports.</li>
 <li><strong>Google Gemini</strong> (Google) — generates AI companion replies and video-reflection analysis.</li>
 <li><strong>Groq</strong> — transcribes audio from videos you share, to enable analysis.</li>
 <li><strong>Firebase</strong> (Google) — authentication, database (Firestore), analytics.</li>
-<li><strong>Aladhan API</strong> — prayer times, based on the city/country you provide (no GPS/location
-data is collected).</li>
+<li><strong>Aladhan API</strong> — prayer times, based on the city/country or approximate GPS coordinates
+you provide.</li>
 <li><strong>quran.com API</strong> — Quran verse text and translations.</li>
 </ul>
 <p>Each of these providers processes data under their own privacy terms; we only send the
