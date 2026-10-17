@@ -14,87 +14,97 @@
 </head>
 <body>
 <h1>Privacy Policy for Nour</h1>
-<p><strong>Last updated: August 5, 2026</strong></p>
+<p><strong>Last updated: October 17, 2026</strong></p>
 
-<p>This is a starting draft, not legal advice. Have it reviewed if you plan to operate in
-jurisdictions with strict data-protection regimes (EU/GDPR, UK, California/CCPA, etc.)
-before publishing.</p>
+<p>This policy applies to the Nour app on iOS (App Store) and Android (Google Play).</p>
 
 <h2>Who we are</h2>
-<p>Nour is developed and published by an individual developer.<br>
-Contact: <strong>52emre19@gmail.com</strong></p>
+<p>Nour is developed and published by an individual developer under the name Laskoy Labs.<br>
+Contact: <strong>laskoylabs@gmail.com</strong></p>
 
 <h2>What data we collect</h2>
 <ul>
-<li><strong>Anonymous device identifier</strong>: When you first open the app, we create an anonymous
-account for your device (via Firebase Authentication's anonymous sign-in). This identifier
-is not linked to your name, email, or phone number unless you choose to provide them.</li>
-<li><strong>Approximate location</strong> (optional): If you choose to share your location, we use your
-device's approximate (coarse) GPS coordinates to calculate accurate prayer times for where
-you are and to schedule prayer-time notifications. Your coordinates are sent to the Aladhan
-API (see "Third-party processors" below) to retrieve prayer times, and are stored on your
-device to schedule notifications. We do not store your coordinates on our servers, and you
-can decline location sharing and pick a city instead, or use Mecca times.</li>
-<li><strong>Profile information you provide</strong>: name, city/country, gender, and stated intent —
-entered during onboarding or in Settings, used only to personalize your experience
-(e.g. how the AI addresses you, which city's prayer times to show).</li>
-<li><strong>Chat messages and shared content</strong>: Messages you send to Nour's AI companion, and any
-video links you share for reflection/analysis, are sent to our backend and stored in our
-database (Firebase Firestore) so your conversation history can be shown back to you across
-sessions.</li>
-<li><strong>Usage data</strong>: Basic app analytics (Firebase Analytics) to understand feature usage and
-crash reports.</li>
+<li><strong>Anonymous account identifier</strong>: When you first open the app, we create an anonymous
+account for you (Firebase Authentication anonymous sign-in). There is no sign-up, and this
+identifier is not linked to your name, email or phone number.</li>
+<li><strong>Approximate location</strong> (optional): If you choose to share your location, we use it only
+for prayer times and prayer-time notifications. On iOS, coordinates are rounded to about 1 km
+before they are stored or sent anywhere, and prayer times are calculated on your device. Your
+coordinates may be sent to the Aladhan API (to retrieve prayer times or the Hijri date) and to
+your device platform's location service (Apple or Google) to look up the name of a place or city.
+We do not store your location on our servers. You can decline location sharing and pick a city
+instead, or use Mecca times.</li>
+<li><strong>Profile information you provide</strong> (optional): your name, city/country, gender and
+stated intent, entered during onboarding or in Settings. Your name and gender are sent with
+your chat messages so Nour can address you appropriately.</li>
+<li><strong>Chat messages and shared content</strong>: Messages you send to Nour, and any video links you
+share for reflection, are sent to our backend and stored in our database (Firebase Firestore)
+so your conversation history can be shown back to you.</li>
+<li><strong>Subscription information</strong>: If you subscribe to Nour Pro, the purchase is handled by
+the App Store or Google Play. We receive the transaction details (for example, which plan and
+until when it is active) and send them to our backend to verify your subscription and unlock
+Pro features. We never receive your payment card details.</li>
+<li><strong>Usage data</strong>: Basic app analytics (Firebase Analytics) to understand how features are used,
+and crash reports to fix problems.</li>
 </ul>
+
+<p>Your reading progress, favorite verses, intentions and settings are stored only on your device.</p>
 
 <h2>How we use your data</h2>
 <ul>
-<li>To generate AI companion replies and video reflections (see "Third-party processors" below).</li>
-<li>To show you your own chat history and reading progress.</li>
-<li>To enforce a daily free-usage limit.</li>
-<li>To improve the app.</li>
+<li>To generate Nour's replies and video reflections.</li>
+<li>To show you your own chat history.</li>
+<li>To verify your subscription and enforce usage limits.</li>
+<li>To calculate prayer times and send prayer-time notifications.</li>
+<li>To understand usage and improve the app.</li>
 </ul>
-<p>We do <strong>not</strong> sell your data, and we do not use your chat content for advertising.</p>
+<p>We do not sell your data, we do not use it for advertising, and we do not track you across
+other companies' apps or websites.</p>
 
 <h2>Third-party processors</h2>
-<p>To provide the app's features, the content you send is processed by:</p>
+<p>To provide the app's features, some data is processed by:</p>
 <ul>
-<li><strong>Google Gemini</strong> (Google) — generates AI companion replies and video-reflection analysis.</li>
-<li><strong>Groq</strong> — transcribes audio from videos you share, to enable analysis.</li>
-<li><strong>Firebase</strong> (Google) — authentication, database (Firestore), analytics.</li>
-<li><strong>Aladhan API</strong> — prayer times, based on the city/country or approximate GPS coordinates
-you provide.</li>
-<li><strong>quran.com API</strong> — Quran verse text and translations.</li>
+<li><strong>DeepSeek</strong>: generates Nour's replies and video reflections from your messages (and
+your name and gender, if you provided them). DeepSeek may process data outside your country.</li>
+<li><strong>Firebase (Google)</strong>: authentication, database (Firestore) and analytics.</li>
+<li><strong>Apple (App Store) and Google (Google Play)</strong>: payments and subscription management,
+and on-device services such as place-name lookup.</li>
+<li><strong>Aladhan API</strong>: prayer times and the Hijri date, based on the city or approximate
+coordinates you provide.</li>
+<li><strong>Text-to-speech service</strong>: Noor Story audio is generated on our server from the day's verse
+and reflection question. No personal data is sent for this.</li>
+<li><strong>quran.com and alquran.cloud</strong>: Quran text, translations, transliteration and recitations.
+No personal data is sent to them.</li>
 </ul>
-<p>Each of these providers processes data under their own privacy terms; we only send the
-minimum necessary (e.g. your message text, or the video's audio/transcript) to perform the
+<p>Each provider processes data under its own privacy terms. We send only what is needed for the
 requested feature.</p>
 
 <h2 id="delete-data">Data retention and deletion</h2>
-<p>Chat history and shared-content analysis are retained so you can revisit past
-conversations.</p>
-<p><strong>To delete your data:</strong> open Nour, go to <strong>Settings &rarr; Account &rarr; Delete Account</strong>,
-and confirm. This permanently and immediately deletes your chat history, saved
-preferences, and usage records from our database (Firebase Firestore), and deletes your
-anonymous authentication identity. This action cannot be undone.</p>
-<p>If you're unable to use the in-app option, you can request deletion by emailing
-<strong>52emre19@gmail.com</strong> from the device you used the app on (or with any identifying
-details you can provide); we will delete your associated records within 30 days.</p>
+<p>Chat history is kept so you can revisit past conversations.</p>
+<p>To delete your data: open Nour, go to <strong>Settings → Delete Account</strong> (on Android under
+<strong>Settings → Account</strong>) and confirm. This
+permanently and immediately deletes your chat history, saved preferences and usage records from
+our database (Firebase Firestore), along with your anonymous account. This cannot be undone.
+Deleting your account does not cancel an App Store or Google Play subscription; manage that in
+your store account settings.</p>
+<p>If you can't use the in-app option, email <strong>laskoylabs@gmail.com</strong> with any details that
+identify your use of the app, and we will delete your associated records within 30 days.</p>
 
 <h2>Children's privacy</h2>
-<p>Nour is not directed at children under 13 (or the minimum age required by your country's
-law), and we do not knowingly collect data from them.</p>
+<p>Nour is not directed at children under 13 (or the minimum age required by your country's law),
+and we do not knowingly collect data from them.</p>
 
-<h2>Sensitive content notice</h2>
-<p>Nour is a spiritual-support companion, not a medical, psychological, or emergency service.
-If you are experiencing a mental health crisis, please contact a licensed professional,
-a crisis helpline in your country, or emergency services — Nour is not a substitute for
-professional help.</p>
+<h2>AI and sensitive content notice</h2>
+<p>Nour's companion is an AI. It can make mistakes, and its replies are not a fatwa or a religious
+ruling. Nour is not a medical, psychological or emergency service. If you are experiencing a
+mental-health crisis, please contact a licensed professional, a crisis helpline in your country,
+or emergency services.</p>
 
 <h2>Changes to this policy</h2>
-<p>We may update this policy as the app evolves. Material changes will be reflected by
-updating the "Last updated" date above.</p>
+<p>We may update this policy as the app evolves. Material changes will be reflected by updating
+the "Last updated" date above.</p>
 
 <h2>Contact</h2>
-<p>Questions about this policy or your data: <strong>52emre19@gmail.com</strong></p>
+<p>Questions about this policy or your data: <strong>laskoylabs@gmail.com</strong></p>
 </body>
 </html>
